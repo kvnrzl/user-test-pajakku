@@ -3,37 +3,46 @@ package main
 import "fmt"
 
 func main() {
-	// for i := -1; i <= 105; i++ {
-	// 	// fmt.Println(i, weirdNotWeird(i))
-	// 	x := generateRandomOneToHundred()
-	// 	fmt.Println(x, grade(x))
-	// }
-	// input := "Selamat Pagi Semuanya"
-	// output := generateOutputFormat(input)
+	// TEST NO.1
+	fmt.Println("=============TEST NO.1================")
+	fmt.Println(weirdNotWeird(1))
+	fmt.Println(weirdNotWeird(98))
 
-	// fmt.Println("Format Satu :", output.FormatSatu)
-	// fmt.Println("Format Dua :", output.FormatDua)
-	// fmt.Println("Format Tiga :", output.FormatTiga)
-	// fmt.Println("Format Empat :", output.FormatEmpat)
+	// TEST NO.2
+	fmt.Println("=============TEST NO.2================")
+	fmt.Println(grade(generateRandomOneToHundred()))
 
-	input := 1225441
-	output := generateOutputArrayString(input)
+	// TEST NO.4
+	fmt.Println("=============TEST NO.4================")
+	inputSoal4 := "Selamat Pagi Semuanya"
+	output := generateOutputFormat(inputSoal4)
+	fmt.Println("Format Satu :", output.FormatSatu)
+	fmt.Println("Format Dua :", output.FormatDua)
+	fmt.Println("Format Tiga :", output.FormatTiga)
+	fmt.Println("Format Empat :", output.FormatEmpat)
 
-	fmt.Println("OutputArrayString:")
-	for _, value := range output.Values {
+	// TEST NO.5 - Output Struct/Object with Array String
+	fmt.Println("=============TEST NO.5================")
+	inputSoal5 := 1225441
+	outputSoal5 := generateOutputArrayString(inputSoal5)
+	for _, value := range outputSoal5.Values {
 		fmt.Println(value)
 	}
 
-	// cetakMitraPajakku()
+	// TEST NO.5 - Print 1 - 100 and Mitra Pajakku
+	fmt.Println("=============TEST NO.5================")
+	cetakMitraPajakku()
 
-	// fmt.Println(isValid("katak"))
-	// fmt.Println(isValid("aku"))
+	// TEST NO.5 - Palindrome
+	fmt.Println("=============TEST NO.5================")
+	fmt.Println(isPalindrome("MADAM"))
+	fmt.Println(isPalindrome("KATAK"))
+	fmt.Println(isPalindrome("AKU"))
 
-	// array := []int{20, 50, 60, 50, 70, 80, 81, 20, 21}
-	// sortedArray := sorting(array)
-
-	// // menampilkan data yang telah diurutkan
-	// for _, value := range sortedArray {
-	// 	fmt.Println(value)
-	// }
+	// TEST NO.5 - Remove duplicates and sorting
+	fmt.Println("=============TEST NO.5================")
+	listOfInt := []int{20, 50, 60, 50, 70, 80, 81, 20, 21}
+	sortedListOfInt := removeDuplicatesAndSorting(listOfInt)
+	fmt.Println(sortedListOfInt)
+	fmt.Println("=====================================")
 }

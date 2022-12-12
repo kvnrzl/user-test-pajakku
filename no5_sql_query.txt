@@ -2,8 +2,8 @@
 SELECT *
 FROM T_SPT_21_TIDAK_FINAL
 WHERE Bruto > 20000 AND Pph < 2000
-ORDER BY ID ASC;
+ORDER BY ID ASC
 
 •	Tuliskan SQL statement yang menampilkan jumlah semua dan rata-rata Pph-nya
 SELECT SUM(Pph) AS "Jumlah", AVG(Pph) AS "Rata Rata" 
-FROM T_SPT_21_TIDAK_FINAL;
+FROM T_SPT_21_TIDAK_FINAL

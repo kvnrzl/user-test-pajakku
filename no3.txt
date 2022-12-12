@@ -1,2 +1,6 @@
 
-SELECT mahasiswa.id_mhs AS "ID MAHASISWA", mahasiswa.nama_mhs AS "NAMA MAHASISWA", mata_kuliah.nama_matkul AS "NAMA MATKUL" FROM mahasiswa LEFT JOIN mata_kuliah_mahasiswa ON mahasiswa.id_mhs = mata_kuliah_mahasiswa.id_mhs LEFT JOIN mata_kuliah ON mata_kuliah.id_matkul = mata_kuliah_mahasiswa.id_matkul ORDER BY mahasiswa.id_mhs DESC LIMIT 2 OFFSET 1
+SELECT mahasiswa.id_mhs AS "ID MAHASISWA", mahasiswa.nama_mhs AS "NAMA MAHASISWA", mata_kuliah.nama_matkul AS "NAMA MATKUL" 
+FROM mahasiswa 
+LEFT JOIN mata_kuliah_mahasiswa ON mahasiswa.id_mhs = mata_kuliah_mahasiswa.id_mhs 
+LEFT JOIN mata_kuliah ON mata_kuliah.id_matkul = mata_kuliah_mahasiswa.id_matkul 
+ORDER BY mahasiswa.id_mhs DESC LIMIT 2 OFFSET 1

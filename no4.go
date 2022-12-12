@@ -14,8 +14,8 @@ type OutputFormat struct {
 func generateOutputFormat(input string) *OutputFormat {
 	formatSatu := strings.ToUpper(input)
 	formatDua := strings.ToLower(input)
-	formatTiga := strings.Title(input)
-	formatEmpat := strings.Replace(strings.ToUpper(input), " ", "", -1)
+	formatTiga := strings.Replace(strings.Title(input), " ", "", -1)
+	formatEmpat := strings.Replace(formatSatu, " ", "", -1)
 
 	return &OutputFormat{
 		FormatSatu:  formatSatu,
