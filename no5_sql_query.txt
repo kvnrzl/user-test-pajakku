@@ -1,0 +1,9 @@
+•	Tuliskan SQL statement yang menampilkan semua data yang memiliki Bruto > 20000, Pph < 2000, terurut membesar berdasarkan ID. 
+SELECT *
+FROM T_SPT_21_TIDAK_FINAL
+WHERE Bruto > 20000 AND Pph < 2000
+ORDER BY ID ASC;
+
+•	Tuliskan SQL statement yang menampilkan jumlah semua dan rata-rata Pph-nya
+SELECT SUM(Pph) AS "Jumlah", AVG(Pph) AS "Rata Rata" 
+FROM T_SPT_21_TIDAK_FINAL;
